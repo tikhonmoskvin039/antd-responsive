@@ -26,6 +26,8 @@ function App() {
         Galery
       </Typography.Title>
       <Input.Search
+        defaultValue={searchText}
+        onChange={(e) => setSearchText(e.target.value)}
         style={{ maxWidth: 500, display: "flex", margin: "0 auto" }}
         onSearch={(value) => {
           setSearchText(value);
